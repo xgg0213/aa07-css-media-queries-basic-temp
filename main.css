@@ -82,16 +82,76 @@ header {
     justify-content: center;
 }
 
+
 /* ----- Phase 1 - Moderate Screen ----- */
 
 /* Your code here */
+@media screen and (min-width: 851px) and (max-width: 1220px) {
+    /* .page {
+        flex-direction: column;
+    } */
+    .content {
+        flex-direction: row;
+    }
+    /* .sidebar {
+        flex-direction: column;
+    } */
+
+}
 
 /* ----- Phase 1 - Wide Screen ----- */
 
 /* Your code here */
+@media screen and (min-width: 1220px) {
+    .page {
+        flex-direction: row;
+    }
+    .content {
+        flex-direction: row;
+    }
+    /* .sidebar {
+        flex-direction: column;
+    } */
+
+}
 
 /* ===== PRINTING ===== */
 
 /* Phase 2 */
 
 /* Your code here */
+/* @media print {
+    .story-box {
+        display:contents;
+        background: white;
+    }
+    header {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .image-box{
+        display: none;
+    }
+} */
+
+/* bonus - portrait */
+/* can either use position absolute or justify content (this depends on the html setup) */
+/* and (orientation: portrait/landscape means in which mode this specifications apply) */
+@media print {
+    .story-box {
+        display:contents;
+        background: white;
+    }
+    header {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .image-box{
+        display:none;
+    
+    }
+}
